@@ -22,12 +22,14 @@ def roman_numeral_to_number(numeral)
 data
     reply = 0
     for key, value in @data
+        puts key
+        puts value
         while numeral.index(key) == 0
              reply += value
              numeral.slice!(key)
              
         end
     end
-    p reply
+    reply
 end
 
